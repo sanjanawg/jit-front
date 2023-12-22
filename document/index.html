@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="document.css">
+  <title>Document Upload</title>
+</head>
+<body>
+  <!-- Header section -->
+  <header>
+    <h1>Document Upload</h1>
+    <nav class="navbar">
+            
+      <a href="file:///C:/Users/sanja/OneDrive/Desktop/jit%20frontend/home.js/home.html">Home</a>
+      <a href="file:///C:/Users/sanja/OneDrive/Desktop/jit%20frontend/schedule/schedule.html">Schedule Class</a>
+      <a href="file:///C:/Users/sanja/OneDrive/Desktop/jit%20frontend/attendence/attendence.html">Attendence</a>
+      <a href="file:///C:/Users/sanja/OneDrive/Desktop/jit%20frontend/chatbot/chatbot.html?">ChatBot</a>
+      <a href="file:///C:/Users/sanja/OneDrive/Desktop/jit%20frontend/report/report.html">Your Report</a>
+  
+  
+</nav>
+    <!-- Add any additional header elements or navigation here -->
+  </header>
+
+  <!-- Main content section -->
+  <section class="main-content">
+    <h2>Upload Documents</h2>
+
+    <!-- Document upload form -->
+    <div class="upload-form">
+      <label for="file-upload">Select a file to upload:</label>
+      <input type="file" id="file-upload" accept=".pdf, .doc, .docx, .xls, .xlsx, .csv">
+
+      <button onclick="uploadDocument()">Upload Document</button>
+    </div>
+  </section>
+
+  <!-- Footer section -->
+  <footer>
+    <p>&copy; 2023 Online Tutoring</p>
+  </footer>
+
+  <!-- JavaScript for document upload functionality -->
+  <script>
+    // Function to handle document upload (replace with actual backend logic)
+    function uploadDocument() {
+      const fileInput = document.getElementById('file-upload');
+      const selectedFile = fileInput.files[0];
+  
+      if (selectedFile) {
+        // You can use FormData to handle file uploads and send them to the backend
+        const formData = new FormData();
+        formData.append('document', selectedFile);
+  
+        // Replace this alert with your actual upload logic or send data to the backend
+        alert(`Document uploaded: ${selectedFile.name}`);
+      } else {
+        alert('Please select a file to upload.');
+      }
+    }
+  </script>
+  
+</body>
+</html>

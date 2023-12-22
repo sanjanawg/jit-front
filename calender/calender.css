@@ -1,0 +1,67 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f5f5;
+  margin: 0; /* Reset default margin */
+}
+
+/* Header styles */
+header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  padding: 20px 10%;
+  background: transparent;
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  align-items: center;
+  z-index: 100;
+}
+
+/* Navigation bar styles */
+.navbar {
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+}
+
+.navbar a {
+  font-size: 25px;
+  color: black;
+  text-decoration: none;
+  font-weight: 500;
+  margin: 0 20px; /* Add margin between links */
+  transition: .3s;
+  color: black;
+  opacity: 1;
+}
+
+.navbar a:hover {
+  color: rgba(51, 145, 51, 0.459);
+}
+
+/* Main content styles */
+.main-content {
+  text-align: center;
+  margin: 120px auto; /* Adjust top margin to create space for the fixed header */
+  background-color: #fff;
+  padding: 20px;
+  width: 80%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+h1 {
+  margin: 0;
+}
+
+/* Footer styles */
+footer {
+  margin-top: 20px;
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}

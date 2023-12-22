@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="chatbot.css">
+  <title>Chatbot</title>
+</head>
+<body>
+  <!-- Header section -->
+  <header>
+    <h1>Chatbot</h1>
+    <nav class="navbar">
+            
+      <a href="file:///C:/Users/sanja/OneDrive/Desktop/jit%20frontend/home/home.html">Home</a>
+      <a href="file:///C:/Users/sanja/OneDrive/Desktop/jit%20frontend/schedule/schedule.html">Schedule Class</a>
+      <a href="file:///C:/Users/sanja/OneDrive/Desktop/jit%20frontend/attendence/attendence.html">Attendence</a>
+      <a href="file:///C:/Users/sanja/OneDrive/Desktop/jit%20frontend/chatbot/chatbot.html?">ChatBot</a>
+      <a href="file:///C:/Users/sanja/OneDrive/Desktop/jit%20frontend/report/report.html">Your Report</a>
+  
+  
+</nav>
+    <!-- Add any additional header elements or navigation here -->
+  </header>
+
+  <!-- Main content section -->
+  <section class="main-content">
+    <div class="chat-container" id="chat-container">
+      <div class="chat" id="chat">
+        <div class="chat-message bot">Hello! How can I help you today?</div>
+      </div>
+    </div>
+
+    <!-- User input form -->
+    <form id="user-input-form">
+      <input type="text" id="user-input" placeholder="Type your message...">
+      <button type="button" onclick="sendMessage()">Send</button>
+    </form>
+  </section>
+
+  <!-- Footer section -->
+  <footer>
+    <p>&copy; 2023 Online Tutoring</p>
+  </footer>
+
+  <!-- JavaScript for chatbot functionality -->
+  <script src="chatbot.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #4caf50;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar a {
+    display: inline-block;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 15px;
+}
+
+.schedule {
+    padding: 50px 10%;
+}
+
+.schedule h1 {
+    color: #333;
+}
+
+.class {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.class h2 {
+    color: #4caf50;
+}
+
+.class p {
+    color: #333;
+    font-size: 14px;
+}

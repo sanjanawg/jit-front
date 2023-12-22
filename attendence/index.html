@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="attendence.css">
+    <title>Attendance Sheet</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            
+            <a href="home.html">Home</a>
+            <a href="file:///C:/Users/sanja/OneDrive/Desktop/jit%20frontend/schedule/schedule.html">Schedule Class</a>
+            <a href="file:///C:/Users/sanja/OneDrive/Desktop/jit%20frontend/attendence/attendence.html">Attendence</a>
+            <a href="file:///C:/Users/sanja/OneDrive/Desktop/jit%20frontend/chatbot/chatbot.html?">ChatBot</a>
+            <a href="file:///C:/Users/sanja/OneDrive/Desktop/jit%20frontend/report/report.html">Your Report</a>
+        
+        
+    </nav>
+    </header>
+    <div class="container">
+        <h1>Attendance Sheet</h1>
+        <form id="attendanceForm">
+            <label for="studentName">Student Name:</label>
+            <input type="text" id="studentName" required>
+
+            <label for="attendanceStatus">Attendance Status:</label>
+            <select id="attendanceStatus" required>
+                <option value="present">Present</option>
+                <option value="absent">Absent</option>
+            </select>
+
+            <button type="button" onclick="addAttendance()">Add Attendance</button>
+        </form>
+
+        <table id="attendanceTable">
+            <thead>
+                <tr>
+                    <th>Student Name</th>
+                    <th>Attendance Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Attendance entries will be added here -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

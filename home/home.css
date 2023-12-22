@@ -1,0 +1,372 @@
+*
+{
+    margin:0cm;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+body{
+    color:black;
+    background-color: white;
+}
+.header{
+    position: fixed;
+    left:0;
+    top:0;
+    width: 100%;
+    padding: 20px 10%;
+    background:transparent;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    text-align: center;
+}
+.logo{
+    position: relative;
+    font-size:25px ;
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    cursor:default;
+    opacity: 0;
+    animation: slideRight 1s ease forwards 
+
+}
+.navbar a{
+    display: inline-block;
+    font-size: 25px;
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+    color: black;
+    opacity:0;
+    animation:slideTop .5s ease forwards;
+}
+.navbar a:hover{
+    color: rgba(51, 145, 51, 0.459);
+}
+.home{
+    position: relative;
+    width:100%;
+    justify-content: space-between;
+    height: 100vh;
+    background: url() no-repeat;
+    background-position: center;
+    background-size: cover;
+    display:flex;
+    align-items: center;
+    padding: 70px 10% 0;
+
+}
+.home-content{
+    max-width: 600px;
+
+}
+.home-content h3 {
+    font-size: 32px;
+    font-weight: 700;
+    opacity: 0;
+    animation: slideBottom 1s ease forwards; /* Corrected animation property */
+    animation-delay: 0.7s;
+}
+.about-img{
+    display: block;
+    margin-right: 35px;
+    float: right;
+    
+    border-radius: 50px;
+  }
+
+@keyframes slideBottom {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.home-content h1{
+    font-size: 52px;
+    font-weight: 700;
+    margin:-3px 0;
+    opacity:0;
+    animation:slideRight 1s ease forwards;
+    animation-delay: 1s;
+
+}
+.home-content p{
+    font-size: 20px;
+    opacity:0;
+    animation:slideLeft 1s ease forwards;
+    animation-delay: 1s;
+
+}
+.home-sci a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width:40px;
+    height:40px;
+    background: transparent;
+    border: 2px solid greenyellow;
+    border-radius: 50%;
+    font-size: 20px;
+    color: greenyellow;
+    text-decoration: none;
+    margin:30px 15px 30px 0;
+
+}
+.home-sci a:hover{
+    background: greenyellow;
+    color:white;
+    box-shadow: 0 0 20px greenyellow;
+    animation:slideLeft 1s ease forwards;
+    animation-delay: 1s;
+}
+.bx{
+    display:inline-block;
+    padding:12px 28px;
+    background: greenyellow;
+    border-radius: 40px;
+    font-size: 16px;
+    color: white;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.bx a:hover{
+    box-shadow: 0 0 5px greenyellow, 0 0 25px greenyellow, 0 0 50px greenyellow,0 0 100px,0 0 200px greenyellow;
+    animation:slideBottom 1s ease forwards;
+    animation-delay: 1s;
+
+}
+.text{
+    color: rgb(222, 64, 233) ;
+}
+.home-content h3:nth-of-type(2){
+    margin-bottom: 30px;
+
+}
+@keyframes slideRight{
+    0%{
+        transform: translateX(-100px);
+        opacity :0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity :1;
+    }
+}
+@keyframes slideTop{
+    0%{
+        transform: translateY(-100px);
+        opacity :0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity :1;
+    }
+}
+@keyframes slideBottom{
+    0%{
+        transform: translateY(-100px);
+        opacity :0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity :1;
+    }
+}
+@keyframes slideLeft{
+    0%{
+        transform: translateY(100px);
+        opacity :0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity :1;
+    }
+}
+
+
+.about{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    gap:2rem;
+    padding-bottom: 6rem;
+}
+
+.contain{
+    max-width: 1200px; /* Set your desired maximum width */
+    margin: 0 auto;
+}
+.about-text h3{
+     font-size: 60px;
+
+}
+.about-text h2 span
+{
+    color:greenyellow;
+
+}
+.about-text p{
+    color:black;
+    font-size:20px;
+    line-height:1.7;
+    margin-bottom:4rem;
+    
+}
+.conatiner{
+    padding: 90px;
+}
+/* ... (unchanged styles) ... */
+
+.services {
+    color: black;
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 14rem;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 60px;
+    padding-bottom: 70px;
+}
+
+.subtitle span {
+    color: greenyellow;
+}
+
+.services-list {
+    display: flex;
+    justify-content: space-around; /* Adjust as needed */
+    flex-wrap: wrap;
+}
+
+.services-list div {
+    background-color: transparent;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 700; /* Adjust the font weight as needed */
+    border: 2px solid cyan;
+    border-radius: 20px;
+    margin: 20px;
+    text-align: center;
+    transition: background 0.5s, transform 0.5s;
+    box-shadow: 1px 1px 20px rgb(2, 4, 42), 1px 1px 40px rgb(85, 91, 205);
+}
+
+.services-list div:hover {
+    background: greenyellow;
+    color: black;
+    box-shadow: 0 0 20px greenyellow;
+   transform: translateY(-10px);
+}
+
+/* Reset some default styles */
+body, h1, h2, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.skills {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+}
+
+.box {
+    width: 300px;
+    padding: 20px;
+    background: greenyellow;
+    box-shadow: 0 4px 8px rgba(0, 255, 255, 0.2);
+    text-align: center;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s, transform 1s;
+}
+
+.box h2 {
+    color: cyan;
+    margin-bottom: 10px;
+}
+
+/* Apply animation when the skills section is in view */
+.skills.in-view .box {
+    opacity: 1;
+    transform: translateY(0);
+}
+/* styles.css */
+
+/* styles.css */
+
+/* styles.css */
+
+.box {
+    width: 400px; /* Adjust width as needed */
+    height: 300px; /* Adjust height as needed */
+    background-color: white;
+    color: black;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 0 30px greenyellow; /* Adjust shadow color and size as needed */
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s, transform 0.5s;
+    border-radius: 15px; /* Add rounded corners */
+}
+
+.box h2 {
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 5px;
+    margin-bottom: 20px; /* Add space between heading and list */
+}
+
+.box ul {
+    list-style: none; /* Remove bullets */
+    padding: 0; /* Remove default padding */
+}
+
+.box li {
+    margin-bottom: 15px; /* Add space between list items */
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+.main-text {
+    padding-top: 130px;
+    margin-top: 200px;
+}
+
+.main-text h2 {
+    font-size: 60px;
+    line-height: 1;
+    text-align: center;
+}
+
+.main-text h2 span {
+    color: cyan;
+}
+
+.portfolio-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(359px, auto));
+}

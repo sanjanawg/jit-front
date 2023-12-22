@@ -1,0 +1,82 @@
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4caf50;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+}
+
+nav {
+    background-color: #333;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+li {
+    margin: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.dashboard-section {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    margin: 20px auto;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+h2 {
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+h3 {
+    color: #333;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #555;
+}
+
+.course-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.course-list li {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 8px;
+}

@@ -1,0 +1,100 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #4caf50;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar a {
+    display: inline-block;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 15px;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 10%;
+    background-color: #fff;
+}
+
+.welcome {
+    max-width: 600px;
+}
+
+.quick-links {
+    display: flex;
+    gap: 15px;
+}
+
+.quick-links a {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+.notifications {
+    background-color: rgb(248, 145, 248);
+    padding: 15px 10%;
+    color: black;
+}
+
+.alert {
+    margin-bottom: 10px;
+}
+
+.chatbot {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.course-overview {
+    padding: 50px 10%;
+}
+
+.class {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.class h3 {
+    color: #4caf50;
+}
+
+.class p {
+    color: #333;
+    font-size: 14px;
+}

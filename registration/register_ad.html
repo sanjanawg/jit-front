@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrator Registration</title>
+    <link rel="stylesheet" href="register_te.css"> <!-- You can link a stylesheet for styling -->
+</head>
+<body>
+
+<form id="adminRegistrationForm" action="file:///C:/Users/sanja/OneDrive/Desktop/jit%20frontend/home.js/home.html" method="post">
+    <h2>Administrator Registration</h2>
+    
+    <div class="form-group">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+    </div>
+
+    <div class="form-group">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+    </div>
+
+    <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+    </div>
+
+    <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+    </div>
+
+    <div class="form-group">
+        <label for="confirm-password">Confirm Password:</label>
+        <input type="password" id="confirm-password" name="confirm-password" required>
+    </div>
+
+    <div class="form-group">
+        <label for="secret-key">Secret Key:</label>
+        <input type="password" id="secret-key" name="secret-key" required>
+        <small>This is your secret key to maintain administrator role (e.g., 1234)</small>
+    </div>
+
+    <div class="form-group">
+        <input type="submit" value="Register">
+    </div>
+</form>
+
+<!-- Your HTML code remains the same as before -->
+
+<script>
+    document.getElementById("adminRegistrationForm").addEventListener("submit", function(event) {
+        // Get the value entered in the secret key field
+        var secretKey = document.getElementById("secret-key").value;
+    
+        // Check if the entered secret key is correct (e.g., "1234")
+        if (secretKey === "1234") {
+            // The secret key is correct, allow the form to submit
+            alert("Registration successful! Redirecting to home page.");
+            // You can redirect to the home page using window.location.href or any other method
+        } else {
+            // The secret key is incorrect, prevent the form from submitting
+            alert("Incorrect secret key. Registration aborted.");
+            event.preventDefault(); // Prevent the form from being submitted
+        }
+    });
+    </script>
+     <!-- You can link a JavaScript file for additional functionality -->
+
+</body>
+</html>

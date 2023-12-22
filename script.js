@@ -1,0 +1,4 @@
+"scripts": {
+    "start": "node server/app.js"
+  }
+  

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="schedule.css">
+  <title>Class Scheduling</title>
+</head>
+<body>
+  <!-- Header section -->
+  <header>
+    <h1>Class Scheduling</h1>
+    <nav class="navbar">
+            
+      <a href="file:///C:/Users/sanja/OneDrive/Desktop/jit%20frontend/home.js/home.html">Home</a>
+      <a href="file:///C:/Users/sanja/OneDrive/Desktop/jit%20frontend/schedule/schedule.html">Schedule Class</a>
+      <a href="file:///C:/Users/sanja/OneDrive/Desktop/jit%20frontend/attendence/attendence.html">Attendence</a>
+      <a href="file:///C:/Users/sanja/OneDrive/Desktop/jit%20frontend/chatbot/chatbot.html?">ChatBot</a>
+      <a href="file:///C:/Users/sanja/OneDrive/Desktop/jit%20frontend/report/report.html">Your Report</a>
+  
+  
+</nav>
+  </header>
+
+  <!-- Main content section -->
+  <section class="main-content">
+    <h2>Schedule a Class</h2>
+
+    <!-- Calendar and scheduling form -->
+    <div class="calendar-container">
+      <!-- Calendar -->
+      <div id="calendar"></div>
+
+      <!-- Scheduling form -->
+      <div class="scheduling-form">
+        <label for="selected-date">Selected Date:</label>
+        <input type="text" id="selected-date" readonly>
+
+        <label for="time-slot">Time Slot:</label>
+        <select id="time-slot">
+          <option value="9:00 AM - 10:00 AM">9:00 AM - 10:00 AM</option>
+          <option value="10:00 AM - 11:00 AM">10:00 AM - 11:00 AM</option>
+          <option value="11:00 AM - 12:00 PM">11:00 AM - 12:00 PM</option>
+          <option value="12:00 PM - 1:00 PM">12:00 PM - 1:00 PM</option>
+          <option value="1:00 PM - 2:00 PM">1:00 PM - 2:00 PM</option>
+          <option value="2:00 PM - 3:00 PM">2:00 PM - 3:00 PM</option>
+        </select>
+
+        <label for="subject-name">Subject Name:</label>
+        <input type="text" id="subject-name" placeholder="Enter subject name">
+
+        <!-- Share Schedule and Add Schedule buttons -->
+        <button onclick="shareSchedule()">Share Schedule</button>
+        <button onclick="addSchedule()">Add Schedule</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer section -->
+  <footer>
+    <p>&copy; 2023 Online Tutoring</p>
+  </footer>
+
+  <!-- Include jQuery and FullCalendar libraries -->
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+
+  <!-- Include FullCalendar CSS and JS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.js"></script>
+
+  <!-- JavaScript for FullCalendar initialization -->
+  <script>
+    $(document).ready(function() {
+      $('#calendar').fullCalendar({
+        selectable: true,
+        select: function(start, end) {
+          const selectedDateInput = document.getElementById('selected-date');
+          selectedDateInput.value = moment(start).format('YYYY-MM-DD');
+        }
+      });
+    });
+
+    // Function to handle sharing the schedule
+    function shareSchedule() {
+      const selectedDate = document.getElementById('selected-date').value;
+      const timeSlot = document.getElementById('time-slot').value;
+      const subjectName = document.getElementById('subject-name').value;
+
+      const message = `Schedule Shared:\nDate: ${selectedDate}\nTime Slot: ${timeSlot}\nSubject: ${subjectName}`;
+      
+      // Open WhatsApp with pre-filled message
+      window.open(`https://wa.me/?text=${encodeURIComponent(message)}`);
+    }
+
+    // Function to add schedule (replace with actual logic)
+    function addSchedule() {
+      alert('Schedule Added'); // Replace this with your actual logic
+    }
+  </script>
+</body>
+</html>
+
